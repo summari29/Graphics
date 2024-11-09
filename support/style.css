@@ -285,6 +285,7 @@ footer p {
 }
 p {
     color: #16d2e0;
+    font-size: small;
 }
 
 /* BREAKPOINTS */
