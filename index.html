@@ -3,30 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="support/css/bootstrap.min.css">
-    <link rel="stylesheet" href="support/style.css">
-<link href="https://fonts.cdnfonts.com/css/media-gothic" rel="stylesheet">
-<link href="https://fonts.cdnfonts.com/css/rexmone-demo" rel="stylesheet">
-                
-</head>
-<body>
-<!-- Navigation bar -->
-<header>
-  <a href="#" class="logo"><i class="icon" ></i><span>FEPS</span></a>
-  <ul class="navbar">
-    <li><a href="#" class="active">Home</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Contact Us</a></li>
-  </ul>
-<div class="main">
-  <a href="#" class="user"><i class="fa fa-user"></i></a>
-  <div class="fa fa-bars" id="menu-icon"></div>
-</div>
-</header>
+    <title>Far East Piso Wifi</title>
 
+    <!-- CSS FILES -->
+    <link rel="stylesheet" type="text/css" href="support/style.css">
+    <link rel="stylesheet" type="text/css" href="support/style.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- REMIXICONS -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="support/img/logo.png" alt="Logo">
+        </a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="headerIcons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+
+        <div class="navbar">
+          <a href="#" id="homeLink" onclick="scrollToSection('home')">Home</a>
+          <a href="#" id="servicesLink" onclick="scrollToSection('services')">Services/Rates</a>
+          <a href="#" id="contactLink" onclick="scrollToSection('contact')">Contact Us</a>
+          <a href="https://denzo1172003.github.io/draft3/">POCKETDEVS</a>
+      </div>
+    </header>
+
+    <!-- HOME SECTION START -->
+    <section class="home">
+            <div class="home-text">
+                <h4>Welcome to the Page of</h4>
+                <h1>FAR EAST PISO WIFI</h1>
+                <p>This page is intended for our dear costumers to know the 
+                    <br>business and the owner of Far East Piso Wifi along with the 
+                    <br>services/rates offered and how you may be able to contact/connect with us.
+                </p>
+            </div>
+
+            <div class="home-img">
+              <img class="groupImage" src="support/img/logo.png">
+            </div>
+    </section>
+
+    <!-- Content Sections -->
+    <section id="services" class="section">
+      <h4>Welcome to the Page of</h4>
+                <h1>FAR EAST PISO WIFI</h1>
+                <p>This page is intended for our dear costumers to know the 
+                    <br>business and the owner of Far East Piso Wifi along with the 
+                    <br>services/rates offered and how you may be able to contact/connect with us.
+                </p>
+    </section>
+
+    <section id="contact" class="section">
+      <h4>Welcome to the Page of</h4>
+                <h1>FAR EAST PISO WIFI</h1>
+                <p>This page is intended for our dear costumers to know the 
+                    <br>business and the owner of Far East Piso Wifi along with the 
+                    <br>services/rates offered and how you may be able to contact/connect with us.
+                </p>
+    </section>
+    <!-- HOME SECTION END -->
+
+    <!-- SCROLLREVEAL EFFCT -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+      // Function to scroll to the selected section
+      function scrollToSection(sectionId) {
+          const section = document.getElementById(sectionId);
+          window.scrollTo({
+              top: section.offsetTop - 50,  // Adjust the offset to account for fixed navbar
+              behavior: 'smooth'
+          });
+      }
+  </script>
+
+    <!-- JS FILES -->
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
 </body>
-<script src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="support/style.js"></script>
 </html>
