@@ -13,6 +13,9 @@
 
     <!-- BOXICONS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+    </svg>
 
     <!-- REMIXICONS -->
     <link
@@ -39,23 +42,20 @@
 
         <div class="navbar">
           <a href="#" id="homeLink" onclick="scrollToSection('home')">Home</a>
-          <a href="#" id="servicesLink" onclick="scrollToSection('services')">Services/Rates</a>
+          <a href="#" id="servicesLink" onclick="scrollToSection('services')">Services</a>
           <a href="#" id="contactLink" onclick="scrollToSection('contact')">Contact Us</a>
-          <a href="https://denzo1172003.github.io/draft3/">POCKETDEVS</a>
+          <a href="https://usermarcpaul.github.io/PocketDEV/">POCKETDEVS</a>
       </div>
     </header>
 
     <!-- HOME SECTION START -->
-    <section class="home">
-            <div class="home-text">
+    <section id="home" class="section">
                 <h4>Welcome to the Page of</h4>
                 <h1>FAR EAST PISO WIFI</h1>
                 <p>This page is intended for our dear costumers to know the 
                     <br>business and the owner of Far East Piso Wifi along with the 
                     <br>services/rates offered and how you may be able to contact/connect with us.
                 </p>
-            </div>
-
             <div class="home-img">
               <img class="groupImage" src="support/img/logo.png">
             </div>
@@ -63,21 +63,46 @@
 
     <!-- Content Sections -->
     <section id="services" class="section">
-      <h4>Welcome to the Page of</h4>
-                <h1>FAR EAST PISO WIFI</h1>
-                <p>This page is intended for our dear costumers to know the 
-                    <br>business and the owner of Far East Piso Wifi along with the 
-                    <br>services/rates offered and how you may be able to contact/connect with us.
-                </p>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h3>2 hours rate</h3>
+            <p>5 Philippine Peso</p>
+          </div>
+          <div class="details-container">
+            <h3>4 hours rate</h3>
+            <p>10 Philippine Peso</p>
+          </div>
+          <div class="details-container">
+            <h3>8 hours rate</h3>
+            <p>20 Philippine Peso</p>
+          </div>
+          <div class="details-container">
+            <h3>16 hours rate</h3>
+            <p>40 Philippine Peso</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="section">
-      <h4>Welcome to the Page of</h4>
-                <h1>FAR EAST PISO WIFI</h1>
-                <p>This page is intended for our dear costumers to know the 
-                    <br>business and the owner of Far East Piso Wifi along with the 
-                    <br>services/rates offered and how you may be able to contact/connect with us.
-                </p>
+    <section class="section" id="contact">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h3>Welcome to Far East Piso Wifi!</h3>
+            <p>Wherein we are dedicated to providing affordable, high-quality internet access.
+            <br>We offer reliable Piso Wifi solutions that allow people/businesses—whether neighbors, schools, or stores—to provide internet access to their customers for just a few pesos. 
+            <br>Our goal is to make internet access accessible to everyone, regardless of location or budget.
+            </p>
+          </div>
+          <div class="details-container">
+            <h3>You may contact us on the following platforms:</h3>
+            <p>&#xF344; Samantha Misa</p>
+            <p>&#xF5B4; 09813743598</p>
+            <p>We look forward to helping you take your business to the next level with reliable, affordable internet solutions!</p>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- HOME SECTION END -->
 
@@ -94,6 +119,19 @@
           });
       }
   </script>
+
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>Copyright © 2024 Far East Piso Wifi. All Rights Reserved.</p>
+</footer>
 
     <!-- JS FILES -->
     <script src="js/main.js"></script>
